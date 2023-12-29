@@ -1,0 +1,38 @@
+.contenedor{
+    background-image: url('C:\GRUPO10\proyecto\blog\static\fondo grupo10.jpg');
+}
+
+.noti{
+    text-align: initial;
+}
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Receta de Flan</title>
+</head>
+<body>
+  <h1>Receta de Flan</h1>
+  <img src="{% static 'C:\GRUPO10\proyecto\blog\static\flan4.jpg' %}" alt="Flan">
+  <h2>Ingredientes:</h2>
+  <ul>
+    <li>1 taza de azúcar</li>
+    <li>4 huevos</li>
+    <li>1 lata de leche condensada</li>
+    <li>1 lata de leche evaporada</li>
+    <li>1 cucharadita de esencia de vainilla</li>
+  </ul>
+  <h2>Instrucciones:</h2>h2 {
+    font-size: 12px; /* Cambia el tamaño de la letra a 24 pixels */
+    color: #FF00; /* Cambia el color de la letra a rojo */
+  }
+  <ol>
+    <li>Precalienta el horno a 180°C.</li>
+    <li>En una sartén, derrite el azúcar a fuego medio hasta que se forme un caramelo.</li>
+    <!-- ... (continúa con las instrucciones) -->
+  </ol>
+</body>
+</html>

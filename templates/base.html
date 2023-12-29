@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <title>Mi Blog {% block titulo %}{% endblock titulo %}</title>
+</head>
+<body class="contenedor">
+    {% block contenido %}
+
+    {% endblock contenido %}
+    <a href="{% url 'nosotros' %}">NUESTRO EQUIPO</a>
+    html
+    <a href="{% url 'home' %}">VOLVER AL INICIO</a>
+    <img src="{% static 'flan2.jpg' %}" alt="Mi Imagen">
+    <a href="{% url 'noticias:listar' %}">NOTICIAS</a>
+    {% if user.is_authenticated %}
+        <strong>Soy {{ user.username }}</strong>
+        <a href="{% url 'logout' %}">LOGOUT</a>
+    {% else %}
+        <a href="{% url 'login' %}">LOGIN</a>
+        <a href="{% url 'registro' %}">REGISTRO</a>
+    {% endif %}
+
+</body>
+</html>
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Receta de Flan</title>
+</head>
+<body>
+  <h1>Receta de Flan</h1>
+  <img src="{% static 'C:\GRUPO10\proyecto\blog\static\flan4.jpg' %}" alt="Flan">
+  <h2>Ingredientes:</h2>
+  <ul>
+    <li>1 taza de azúcar</li>
+    <li>4 huevos</li>
+    <li>1 lata de leche condensada</li>
+    <li>1 lata de leche evaporada</li>
+    <li>1 cucharadita de esencia de vainilla</li>
+  </ul>
+  <h2>Instrucciones:</h2>
+  <ol>
+    <li>Precalienta el horno a 180°C.</li>
+    <li>En una sartén, derrite el azúcar a fuego medio hasta que se forme un caramelo.</li>
+    <!-- ... (continúa con las instrucciones) -->
+  </ol>
+</body>
+</html>
+
+                                                                             
+                                                                             
+                                                                            
+<img src="{% static 'C:\GRUPO10\proyecto\blog\static\flan3.jpg' %}" alt="Mi Imagen">
+
+<img src="{% static 'C:\GRUPO10\proyecto\blog\static\flan4.jpg' %}" alt="Mi Imagen">
+h2 {
+  font-size: 24px; /* Cambia el tamaño de la letra a 24 pixels */
+  color: #FF0000; /* Cambia el color de la letra a rojo */
+}
